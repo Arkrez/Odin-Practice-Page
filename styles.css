@@ -1,7 +1,8 @@
 body{
   height: 100vh;
   margin: 0;
-  overflow: hidden;
+  padding: 0;
+  overflow: scroll;
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
@@ -10,26 +11,46 @@ body{
 
 }
 
+.header-background{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f2937;
+  
+}
+
 .header{
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  margin-left: 90px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
   margin: 0px;
+  max-width: 950px;
+  min-width: 200px;
   
-  
+}
+
+.header-logo{
+  font-size: 24px;
+  color: #f9faf8;
+  margin-bottom: 35px;
+  padding-top: 20px;
 }
 
 .links{
   align-items: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 10px;
   margin: 0;
+  margin-bottom: 40px;
 }
 
 .header-links{
   display: flex;
-
+  
   justify-content: space-around;
   gap: 20px;
 }
@@ -40,34 +61,37 @@ ul{
 
 
 
-.welcome{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  
 
-
-}
 .welcome-text-header{
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
-  width: 600px;
+  
+  
 }
 .welcome-text-title{
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 48px;
+  font-weight:bolder;
+  color: #f9faf8;
 }
 .welcome-text{
+  display: flex;
+  font-size: 18px;
   font-style: italic;
-  color: darkgrey;
+  color: #e5e7eb;
+  max-width: 500px;
+  flex-wrap: wrap;
 }
 
 .welcome-image{
-  width: 300px;
-  height: 150px;
-  margin: 10px;
+  display: flex;
+  min-width: 300px;
+  min-height: 150px;
+  
   background-color: lightslategray;
+
+  align-items: center;
+  justify-content: center;
 }
 
 .contents{
@@ -75,61 +99,167 @@ ul{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
 }
 
-.info{
+.info-box{
+  
   align-items: center;
   display: flex;
   flex-direction: column;
 
+  
+}
 
+.info-title{
+  font-size: 36px;
+  font-weight: bolder;
+  display: flex;
+  color: #1f2937;
+  
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
 }
 
 .info-cards{
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
   
 }
 
-.cards{
-  background-color: lightcoral;
-  height: 100px;
-  width: 75px;
-  margin: 10px;
+.card-box{
+  display: flex;
+  flex-direction: column;
+  
+  
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+  
+}
+
+.card-img{
+  border: 6px solid #3882f6;
+  width: 170px;
+  border-radius: 5px;
+  height: 170px;
+  
+}
+
+.card-txt{
+  width: 170px;
+  display: flex;
+  text-align: center;
+}
+
+.quote-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e1e1e1;
+  padding: 100px;
+  
 }
 
 .quote{
+  font-size: 36px;
+  font-style:  italic;
+  color: #53585f;
+  flex-basis: 235px;
+  max-width: 900px;
+  
+  
+}
+.quote-author{
   display: flex;
-  background-color: lightslategray;
-  justify-content: center;
-  height: 200px;
+  flex-direction: row-reverse;
+  color: #1f2937;
+  padding-right: 50px;
+  
+  
 }
 
 .call-to-action{
   display: flex;
-  
+  align-items: center;
   justify-content: center;
+  padding-top: 80px;
   
   
 }
 .call-to-action-box{
-  background-color:cornflowerblue;
-  width: 600px;
-  height: 75px;
+  background-color:#3882f6;
+  
+  
+  display: flex;
+  align-items: center;
+  flex-basis: 900px;
+  max-width: 900px;
+  min-width: 100px;
+  margin: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 100px;
+  justify-content: space-around;
+}
+
+.call-to-action-items{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
 
 }
 
 .footer{
+  
   display: flex;
   justify-content: center;
-  
-  height: 75px;
+  align-items: center;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  background-color: #1f2937;
 }
 
 .header,
 .footer{
-  background-color: #1f2937;
+  
   color: aliceblue;
+}
+
+button{
+  background-color: #3882f6;
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+
+}
+
+.welcome-button{
+  background-color: #3882f6;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.welcome-top{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.welcome-bottom{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
